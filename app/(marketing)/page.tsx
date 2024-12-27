@@ -20,12 +20,20 @@ export default function IndexPage() {
             このアプリケーションはNext.js
             AppRouterで作られたものです。ユーザーは自由に投稿をポストすることができます。
           </p>
-          <div>
+          <div className="space-x-4 mt-8">
             <Link
               href={"/login"}
               className={cn(buttonVariants({ size: "lg" }))}
             >
               はじめる
+            </Link>
+            <Link
+              href={"/"}
+              className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
             </Link>
           </div>
         </div>
