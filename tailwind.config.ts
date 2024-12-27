@@ -56,6 +56,17 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: {
+          sm: "100%",
+          md: "100%",
+          lg: "100%",
+          xl: "100%",
+          "2xl": "100%", // 2xl以上の場合も100%に設定
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
