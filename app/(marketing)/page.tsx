@@ -1,3 +1,5 @@
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 export default function IndexPage() {
@@ -18,6 +20,14 @@ export default function IndexPage() {
             このアプリケーションはNext.js
             AppRouterで作られたものです。ユーザーは自由に投稿をポストすることができます。
           </p>
+          <div>
+            <Link
+              href={"/login"}
+              className={cn(buttonVariants({ size: "lg" }))}
+            >
+              はじめる
+            </Link>
+          </div>
         </div>
       </section>
     </>
