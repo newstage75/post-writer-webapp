@@ -1,3 +1,18 @@
+## POST-WRITER-WEBAPP
+
+- Next14にて作成
+```
+npx create-next-app post-writer-webapp --ts --use-npm --next@14
+```
+
+- shadcn/uiを使用[https://ui.shadcn.com/docs/installation/next]
+```
+npx shadcn@latest init
+```
+
+---
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
