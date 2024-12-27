@@ -186,6 +186,9 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
+        <div className="text-center">
+          <p>PostWriterはログインするとブログ投稿ができるようになります。</p>
+        </div>
       </section>
     </>
   );
