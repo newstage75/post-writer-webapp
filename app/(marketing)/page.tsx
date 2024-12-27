@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { siteConfig } from "@/config/site";
 
 export default function IndexPage() {
   return (
@@ -8,7 +9,7 @@ export default function IndexPage() {
       <section className="pt-6 md:pt-10 lg:py-32 pb-8 md:pb-12">
         <div className="container text-center flex flex-col items-center gap-4 max-w-[64rem] mx-auto">
           <Link
-            href={"/"}
+            href={siteConfig.links.x}
             className="bg-muted px-4 py-1.5 rounded-md font-medium text-sm"
           >
             Xをフォローする
@@ -28,7 +29,7 @@ export default function IndexPage() {
               はじめる
             </Link>
             <Link
-              href={"/"}
+              href={siteConfig.links.github}
               className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
               target="_blank"
               rel="noopener noreferrer"
